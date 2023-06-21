@@ -1,0 +1,34 @@
+{
+    "loadConfig": [
+      {
+        "name": "longevity",
+        "options": [
+          {
+            "name": "users",
+            "value": 1
+          },
+          {
+            "name": "duration",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "capacity",
+        "options": [
+          {
+            "name": "users",
+            "value": 1
+          },
+          {
+            "name": "rampUp",
+            "value": 1
+          },
+          {
+            "name": "duration",
+            "value": 1
+          }
+        ]
+      }
+    ]
+  }
