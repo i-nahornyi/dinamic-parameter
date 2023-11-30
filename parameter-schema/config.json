@@ -1,34 +1,43 @@
 {
-    "loadConfig": [
-      {
-        "name": "longevity",
-        "options": [
-          {
-            "name": "users",
-            "value": 1
-          },
-          {
-            "name": "duration",
-            "value": 1
-          }
-        ]
-      },
-      {
-        "name": "capacity",
-        "options": [
-          {
-            "name": "users",
-            "value": 1
-          },
-          {
-            "name": "rampUp",
-            "value": 1
-          },
-          {
-            "name": "duration",
-            "value": 1
-          }
-        ]
-      }
+  "loadConfig": {
+    "longevity": {
+      "users": 1,
+      "duration": 360
+    },
+    "capacity": {
+      "rampUp": 1,
+      "users": 1,
+      "duration": 360,
+      "warmupRamp": 1,
+      "warmupUsers": 1,
+      "warmupDuration": 60
+    },
+    "smoke": {
+      "users": 1
+    }
+  },
+  "environment": {
+    "sandbox": [
+      "http://test-env-sandbox1.com",
+      "http://test-env-sandbox2.com"
+    ],
+    "stage": [
+      "http://test-env-stage1.com",
+      "http://test-env-stage2.com"
+    ],
+    "production": [
+      "http://test-env-production1.com",
+      "http://test-env-production2.com"
     ]
+  },
+  "scenarioConfig": {
+    "sceanrio.A": {
+      "components_enabled": [
+        "param1",
+        "param2",
+        "param3"
+      ]
+    },
+    "scenario.B":{}
   }
+}
